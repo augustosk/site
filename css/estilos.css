@@ -1,0 +1,82 @@
+/* reset do css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("https://i.pinimg.com/originals/07/c9/8f/07c98f6bc7512502846dd11d13d14c24.jpg");
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    font-family: Arial;
+    height: 100vh;
+  }
+/* se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-widht: 400px) {
+body {
+    font-size: 14px;
+}
+}
+
+@media (min-widht: 600px) {
+    font-size: 18px;
+}
+
+  header{
+      display: flex;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .menu {
+    background-color: whitesmoke; 
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+.menu a{
+padding: 10px 50px;
+display: block;
+}
+
+  a {
+    color: darkslategray	;
+ 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  /*.site-subtitle {
+  }*/
+
+  .site-title {
+      font-size: 3em;
+      
+  }
+
+  .img-ator{
+      height: 400px;
+      width: 600px;
+  }
+  
