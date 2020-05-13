@@ -71,12 +71,67 @@ display: block;
   }*/
 
   .site-title {
-      font-size: 3em;
-      
+      font-size: 3em; 
   }
 
-  .img-ator{
-      height: 400px;
-      width: 600px;
+  .ator {
+    /*background-color: whitesmoke ;*/
+    background: rgba(255, 255, 255, 0.4);
+    padding: 2em;
+    
+  } 
+
+  .ator .grid{
+    display: grid;
+    gap: 2em;
+    justify-content: center;
   }
-  
+
+  @media (min-width: 560px) {
+    .ator .grid{
+      grid-template-columns: repeat(2, 400px);
+    }
+    
+  }
+
+  .ator figure{
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px rgb(187, 187, 187);
+  }
+
+  .ator h2 {
+    margin: 1em;
+    font-size: 2em;
+  }
+ 
+  .img-ator {
+      height: 35vh;
+      width: auto;
+      border-radius: 2%;
+      margin-top: 1em;
+
+      overflow: auto;
+      transition: transform .5s ease-in-out;
+  }
+
+  .img-ator:hover {
+    transform: scale(1.1);
+}
+
+.cientista {
+  /*background-color: whitesmoke ;*/
+  background: rgba(255, 140, 140, 0.4);
+  padding: 2em;
+  height: 100vh;
+} 
+.cientista h2 {
+  margin: 1em;
+  font-size: 2em;
+}
+
+footer {
+  background-color: whitesmoke; 
+
+}
