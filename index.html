@@ -5,59 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augusto K</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!--icones do rodape-->
+    <script src="https://kit.fontawesome.com/6f072de665.js" crossorigin="anonymous"></script>
+    <!-- tentativa de scroll com JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
             <li><a href="#">Sobre</a></li>
-            <li><a href= "#">O Cientista</a></li>
             <li><a href= "#ator">O Ator</a></li>
-            <li><a href="#">Escape</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href= "#cientista">O Cientista</a></li>
+
           </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Augusto K</h1>
             <h2 class="site-subtitle">Engenheiro Físico</h2>
         </div>
       </header>
+
+      <section id="sobre" class="sobre">
+        <h2 data-aos="fade-right">Sobre</h2>
+        <p>É importante questionar o quanto a adoção de políticas descentralizadoras prepara-nos para enfrentar situações atípicas decorrentes dos níveis de motivação departamental.</p>
+      
+      </section>
+
+
       <section id="ator" class="ator">
-        <h2>O Ator</h2>
+        <h2 data-aos="fade-right">O Ator</h2>
       
         <div class="grid">
         
         <figure>
-          <img class="img-ator" src="./img/Moritz.jpg" alt="O Despertar da Primavera">
+          <img class="img-ator" src="./img/Moritz.jpg" alt="O Despertar da Primavera" data-aos="fade-up">
           <figcaption>O Despertar da Primavera</figcaption>
         </figure>
-
         
         <figure>
-          <img class="img-ator" src="./img/Puck.jpg" alt=">Sonho de uma Noite de Verão">
+          <img class="img-ator" src="./img/Puck.jpg" alt=">Sonho de uma Noite de Verão" data-aos="fade-up">
           <figcaption>Sonho de uma Noite de Verão</figcaption>
         </figure>
+
         <figure>
-          <img class="img-ator" src="./img/Augusto.jpg" alt="Estranhos Esquisitos: A Vida é Para os Vivos">
+          <img class="img-ator" src="./img/Augusto.jpg" alt="Estranhos Esquisitos: A Vida é Para os Vivos" data-aos="fade-up">
           <figcaption>Estranhos Esquisitos: A Vida é Para os Vivos</figcaption>
         </figure>
+
         <figure>
-          <img class="img-ator" src="./img/Inspetor.jpg" alt="A Morte Faz Check-in">
+          <img class="img-ator" src="./img/Inspetor.JPG" alt="A Morte Faz Check-in" data-aos="fade-up">
           <figcaption>A Morte Faz Check-in</figcaption>
         </figure>
+
       </div>
       </section>
 
+
+
       <section id="cientista" class="cientista">
-        <h2>O Cientista</h2>
+        <h2 data-aos="fade-right">O Cientista</h2>
       
       </section>
       
+
+
       <section>
         <footer>
-          <p>Autor: Augusto K</p>
-          <p><a href="mailto:augustokochen@gmail.com">hege@example.com</a></p>
+            <div class="grid icons">
+              <a target="_blank" href="https://github.com/augustosk">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/augusto.sk">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/augustosk/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:augustokochen@gmail.com">
+                <i class="far fa-envelope"></i>
+              </a>
+              <a href="mailto:augustokochen@gmail.com">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
         </footer>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">AOS.init({ duration: 1000,});</script>
 </body>
 </html>
