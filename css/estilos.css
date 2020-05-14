@@ -57,14 +57,16 @@ padding: 10px 50px;
 display: block;
 }
 
-  a {
-    color: darkslategray	;
- 
+.menu a {
+    color: darkslategray;
     text-decoration: none;
+    transition: color .3s, background-color .3s;
   }
   
-  a:hover {
-    text-decoration: underline;
+.menu a:hover {
+    color: whitesmoke;
+    background-color: darkslategray;
+
   }
 
 
@@ -94,7 +96,7 @@ display: block;
  /*---Seção sobre---*/
   .sobre {
     /*background-color: whitesmoke ;*/
-    background: rgba(255, 140, 140, 0.4);
+    background: rgba(204,255,0, 0.4);
     padding: 2em;
     height: 100vh;
   } 
@@ -102,6 +104,23 @@ display: block;
     margin: 1em;
     font-size: 2em;
   }
+  .img-sobre {
+    height: 35vh;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 1em;
+    filter: grayscale(100%);
+
+    overflow: auto;
+    transition: transform .4s ease-in-out, filter 1s;
+}
+
+.img-sobre:active,
+.img-sobre:hover{
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
   .sobre p{
     color: red;
   }
@@ -150,6 +169,7 @@ display: block;
       transition: transform .4s ease-in-out;
   }
 
+  .img-ator:active,
   .img-ator:hover {
     transform: scale(1.1);
 }
@@ -157,7 +177,7 @@ display: block;
 
 .cientista {
   /*background-color: whitesmoke ;*/
-  background: rgba(255, 140, 140, 0.4);
+  background: rgba(174, 15, 74, 0.4);
   padding: 2em;
   height: 100vh;
 } 
@@ -174,16 +194,19 @@ footer {
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
-  transition: transform .5s ease-in-out;
   position: fixed; 
   bottom: 0;
   left: 0;
   right: 0;
   height: 25px;
-
+}
+footer a{
+  color: darkslategray;
+  text-decoration: none;
+  transition: text-shadow .1s ease-in-out;
 }
 
 footer a:hover {
-  text-decoration: none;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(79, 57, 47);
+  text-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
 }
